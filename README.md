@@ -32,13 +32,18 @@ The complete operational baseline metrics parsed from the active infrastructure 
 
 ### Step 1: Deployment Package Configuration
 The enrollment vector was initiated inside the **Wazuh Manager Web Dashboard Console** by routing through the `Endpoints` option to the `Deploy new agent` wizard interface. The target parameters were configured by selecting **Windows (MSI 32/64 bits)** as the baseline installation format, pinning the static listening manager IP address `192.168.6.133`, and explicitly dedicating `Windows_11` as the client enrollment identifier.
+![Figure 1: Wazuh Manager Web Console / DEB amd64](images/1.png)
+![Figure 2: Wazuh Manager Web Console / DEB amd64](images/2.png)
+![Figure 3: Wazuh Manager Web Console / DEB amd64](images/3.png)
+![Figure 4: Wazuh Manager Web Console / DEB amd64](images/4.png)
 
-[INSERT SCREENSHOT: Wazuh Manager Web Console Interface - Deploy New Agent Selection Screen]
+
 
 ### Step 2: Unattended PowerShell Installation Execution
 An elevated, high-privilege administrative **Windows PowerShell session** was opened on the target machine `GAL1LEO` to handle the installation sequence. The system-generated string argument payload was entered into the console window to trigger an automated, non-interactive deployment background task:
 
-[INSERT SCREENSHOT: Elevated Windows PowerShell Console Running Unattended Web Ingestion Command Strings]
+![Figure 5: Powershell](images/5.png)
+
 ```powershell
 
 #### Detailed Command Parameters Breakdown:
@@ -62,7 +67,8 @@ PS C:\Windows\system32> NET START Wazuh
 The requested service has already been started.
 More help is available by typing NET HELPMSG 2182.
 ```
-[INSERT SCREENSHOT: Local Host Terminal Verification - Output Confirming Already Running Wazuh Service]
+![Figure 6: Local Host Terminal Verification](images/6.png)
+
 
 * **Technical Ingress Analysis:** The terminal exception tracking indicates that the background daemon engine successfully provisioned its service properties and auto-started background processes right after the silent script completed execution.
 
@@ -74,10 +80,12 @@ Upon logging back into the security monitoring console, the newly enrolled node 
 * **Hardware Asset Indexing:** Automated system asset collection successfully scraped hardware specifications, identifying an 8-core processor setup powered by an Intel Core i5-8250U CPU throttling at 1.60GHz alongside a 16.0 GB physical RAM pool.
 * **SIEM Event Stream Ingestion:** Live log pipelines began routing data arrays into Threat Hunting index panels, MITRE ATT&CK matrix view plots, and Compliance monitoring views.
   
-[INSERT SCREENSHOT: Centralized Wazuh Dashboard Showing Active Node 002 Asset Inventory details]
-[INSERT SCREENSHOT: Security Configuration Assessment SCA Overview Page for Windows 11 Node]
+![Figure 7: Centralized Wazuh Dashboard Showing Active Node 002 Asset Inventory details](images/7.png)
+![Figure 8: Security Configuration Assessment SCA Overview Page for Windows 11 Node](images/8.png)
+![Figure 9: Security Configuration Assessment SCA Overview Page for Windows 11 Node](images/9.png)
+![Figure 10: Security Configuration Assessment SCA Overview Page for Windows 11 Node](images/10.png)
 
 ---
 
 ## 5. Conclusion & Operational Findings
-The deployment and registration processes of the security monitoring asset onto the Windows 11 lab VM environment were concluded successfully. Endpoint check commands verified that background monitoring loops are working as intended, and the web console charts show consistent log streaming, baseline posture checking, and centralized tracking visibility across the network environment.
+The deployment and registration processes of the security monitoring asset onto the Windows 11 environment were concluded successfully. Endpoint check commands verified that background monitoring loops are working as intended, and the web console charts show consistent log streaming, baseline posture checking, and centralized tracking visibility across the network environment.
