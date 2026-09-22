@@ -18,13 +18,13 @@ The complete operational baseline metrics parsed from the active infrastructure 
 
 | Environment Parameter | Specification / Value | Architectural Context / Status |
 | :--- | :--- | :--- |
-| **Wazuh Manager Version** | `v4.14.7` | Central Master Core Engine [1] |
-| **Wazuh Manager IP** | `192.168.6.133` | Master Listener IP [1] |
-| **Target Hostname** | `GAL1LEO` | Monitored Deployment Target Asset [1] |
-| **Assigned Agent ID** | `002` | Unique Database Asset Index [1] |
-| **Assigned Agent Name** | `Windows 11` | Friendly Node Identifier [1] |
-| **Target Operating System** | `Windows 11 Pro (10.0.26200.9457)` | Client Platform Workspace [1] |
-| **Target Hardware Specs** | `8 Cores \| Intel i5-8250U @ 1.60GHz \| 16.0 GB RAM` | Endpoint System Footprint [1] |
+| **Wazuh Manager Version** | `v4.14.7` | Central Master Core Engine
+| **Wazuh Manager IP** | `192.168.6.133` | Master Listener IP 
+| **Target Hostname** | `GAL1LEO` | Monitored Deployment Target Asset 
+| **Assigned Agent ID** | `002` | Unique Database Asset Index 
+| **Assigned Agent Name** | `Windows 11` | Friendly Node Identifier 
+| **Target Operating System** | `Windows 11 Pro (10.0.26200.9457)` | Client Platform Workspace 
+| **Target Hardware Specs** | `8 Cores \| Intel i5-8250U @ 1.60GHz \| 16.0 GB RAM` | Endpoint System Footprint
 
 ---
 
