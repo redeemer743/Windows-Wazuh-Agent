@@ -1,4 +1,4 @@
-# Technical Lab Report: Centralized EDR Agent Enrollment
+# Windows Wazuh Agent Installation
 
 **Course/Module:** Security Operations & Infrastructure Lab  
 **Date:** September 21, 2026  
