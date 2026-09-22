@@ -38,8 +38,9 @@ The enrollment vector was initiated inside the **Wazuh Manager Web Dashboard Con
 ### Step 2: Unattended PowerShell Installation Execution
 An elevated, high-privilege administrative **Windows PowerShell session** was opened on the target machine `GAL1LEO` to handle the installation sequence. The system-generated string argument payload was entered into the console window to trigger an automated, non-interactive deployment background task:
 
-```powershell
 [INSERT SCREENSHOT: Elevated Windows PowerShell Console Running Unattended Web Ingestion Command Strings]
+```powershell
+
 #### Detailed Command Parameters Breakdown:
 * **`Invoke-WebRequest`:** Instructs the local runtime workspace to pull down the official `Wazuh Agent v4.14.7` binary file from the secure online package mirror.
 * **`-OutFile $env:tmp\...`:** Buffers and names the package inside the host system's temporary directory storage sector to streamline background file management.
